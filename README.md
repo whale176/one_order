@@ -2,18 +2,18 @@ _You can just read this content in README.md or just run up the rails service_
 
 ## How to deliver code
 * 1st: fork this project first, and do the questions below and commit
-* 2nd: mailing out the url of forking project
+* 2nd: email the interviewer the URL of forked repository once the code is committed
 
-## Please run commands as below before starting
+## Please run the following commands before starting
 * rake db:create
 * rake db:seed
 
-## Important Note:
-    1. Please do it in a single database query and use Rails relations as much as possible.
+## Requirements:
+    1. Please do it in a single database query, and use Active Record query interface as much as possible.
     2. Returned format: json
-    3. Please avoid to use raw sql to select
+    3. Please avoid using raw sql to select
 
-## Current Meal Food data matches:
+## Current Meal Food data:
 
 |Meal          |Foods                                |
 |--------------|-------------------------------------|
@@ -28,7 +28,7 @@ _You can just read this content in README.md or just run up the rails service_
 ### Q1:
 	Add /no_food_meal endpoint. It should return a list of meals that don't have any food.
 
-Expecting Outcome:
+Expected Outcome:
 
 |No Food Meal       |
 |-------------------|
@@ -39,7 +39,7 @@ Expecting Outcome:
 ### Q2
 	Add /max_foods endpoint. It should return a maximum number of food across all the meals.
 
-Expecting Outcome:
+Expected Outcome:
 
 |Food          |Meal #  |
 |--------------|--------|
@@ -51,9 +51,9 @@ Expecting Outcome:
 
 
 ### Q3
-	Add other_food under the /other_food endpoint. It should list all the food that included in meal except current listed Food Head.
+	Add /other_food endpoint. It should return a list of every food as Food Head; with each Food Head, list the pairing food from all the meal combination.
 
-Expecting Outcome:
+Expected Outcome:
 
 |Food Head     |other_food                                   |
 |--------------|---------------------------------------------|
@@ -62,5 +62,3 @@ Expecting Outcome:
 |Fench Fries   |Coke, Fried Chicken                          |
 |Burger        |Coke, Apple Pie                              |
 |Fried Chicken |Coke, French Fries                           |
-
-
