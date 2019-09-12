@@ -6,6 +6,7 @@ _You can just read this content in README.md or just run up the rails service_
 
 ## Please run the following commands before starting
 * rake db:create
+* rake db:migrate
 * rake db:seed
 
 ## Requirements:
